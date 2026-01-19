@@ -1,4 +1,5 @@
 # aim-navigation-2526-final-assessment
+
 AIM导航组2025-26赛季入队考核题
 
 本目录是一个**简化版 ROS2 工作空间**，用于演示如何在二维栅格地图上复用 `a_star.py`
@@ -20,6 +21,15 @@ homework/
   - `calc_final_path()`：路径回溯
   - `calc_heuristic()`：启发式函数
 - 未实现时会抛出 `NotImplementedError`，属于正常提示。
+
+## 依赖安装（推荐）
+
+仓库根目录提供 `install_deps.py`，可一键安装 `src/` 下所有 ROS2 依赖（基于
+`package.xml`，使用 `rosdep`），并在存在 `requirements.txt` 时自动安装 Python 依赖：
+
+```bash
+python install_deps.py
+```
 
 ## 构建与运行（参考）
 
